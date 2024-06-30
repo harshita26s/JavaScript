@@ -38,3 +38,28 @@ const myFunction = function(){
 // Typeof to find dataType 
 
 console.log(typeof bigNumber);
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myName = "harshi"
+
+let anothername = myName 
+anothername = "harshita"
+
+console.log(myName);
+console.log(anothername);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+// +++
+let userTwo = userOne
+
+userTwo.email = "user@google.com"
+
+console.log(userTwo);
+console.log(userOne.email);
